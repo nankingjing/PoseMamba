@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/nankingjing/PoseMamba/stargazers"><img src="https://img.shields.io/github/stars/nankingjing/PoseMamba?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/nankingjing/PoseMamba/releases/tag/v1.0.0"><img src="https://img.shields.io/github/v/release/nankingjing/PoseMamba?label=release" alt="Release"></a>
   <a href="https://pytorch.org/get-started/locally/"><img src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white" alt="PyTorch"></a>
   <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32401"><img src="https://img.shields.io/badge/AAAI-2025-blue" alt="AAAI 2025"></a>
   <a href="https://arxiv.org/abs/2408.03540"><img src="https://img.shields.io/badge/arXiv-2408.03540-b31b1b.svg" alt="arXiv"></a>
@@ -104,7 +105,9 @@ See `train.sh` for S/B/L variants.
 
 ### Option A: Released `.pth.tr` weights (Google Drive)
 
-Download the [checkpoint bundle](https://drive.google.com/file/d/1WFRAeal8W6ntrTPNrf-SNywdgupj0-S8/view?usp=sharing) or per-model weights:
+Download the [checkpoint bundle](https://drive.google.com/file/d/1WFRAeal8W6ntrTPNrf-SNywdgupj0-S8/view?usp=sharing) or per-model weights below.
+
+> **Hugging Face** (optional): upload local weights with `python scripts/upload_hf_weights.py --weights-dir ./checkpoints_hf`. HF repo: `nankingjing/PoseMamba-weights` (create after upload).
 
 | Model | Params | MACs | Weights |
 |-------|--------|------|---------|
