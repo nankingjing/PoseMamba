@@ -1,0 +1,43 @@
+name: Question
+description: Usage question after reading the FAQ
+title: "[Question]: "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For **installation, dataset, evaluation, or checkpoint format** questions, please use
+        [Installation & FAQ (Discussion #21)](https://github.com/nankingjing/PoseMamba/discussions/21) first.
+
+        Open an issue here only if FAQ does not cover your case.
+
+  - type: checkboxes
+    id: faq_checked
+    attributes:
+      label: FAQ
+      options:
+        - label: I already read [Discussion #21](https://github.com/nankingjing/PoseMamba/discussions/21) and still need help
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: What you tried
+      description: Commands, config paths, links to related issues/discussions
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (optional)
+      placeholder: OS, GPU, Python, PyTorch, CUDA

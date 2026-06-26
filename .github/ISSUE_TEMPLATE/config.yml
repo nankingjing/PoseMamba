@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "📌 Installation & FAQ (read this first)"
+    url: https://github.com/nankingjing/PoseMamba/discussions/21
+    about: Installation, dataset, evaluation, checkpoint format, and common errors
+  - name: "💬 Ask in Discussions"
+    url: https://github.com/nankingjing/PoseMamba/discussions/new?category=general
+    about: General questions that are not bug reports

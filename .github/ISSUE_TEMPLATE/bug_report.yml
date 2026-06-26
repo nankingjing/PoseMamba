@@ -1,0 +1,84 @@
+name: Bug Report
+description: Report a reproducible bug (installation, training, evaluation, demo)
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before submitting:** please check the pinned [Installation & FAQ](https://github.com/nankingjing/PoseMamba/discussions/21).
+        Most installation / dataset / checkpoint issues are already answered there.
+
+  - type: checkboxes
+    id: faq_checked
+    attributes:
+      label: I have read the FAQ
+      options:
+        - label: I checked [Installation & FAQ (Discussion #21)](https://github.com/nankingjing/PoseMamba/discussions/21) and my problem is not covered
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Environment / selective_scan build
+        - Dataset / preprocessing
+        - Training
+        - Evaluation / checkpoint loading
+        - Demo / vis.py
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Clear description of the bug and expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Commands you ran, from env setup to the error
+      placeholder: |
+        1. conda activate posemamba
+        2. CUDA_VISIBLE_DEVICES=0 python train.py ...
+        3. Error occurs at ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error log / traceback
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, GPU, Python, PyTorch, CUDA, nvcc
+      placeholder: |
+        - OS:
+        - GPU:
+        - python -V:
+        - torch.__version__:
+        - CUDA / nvcc:
+    validations:
+      required: true
+
+  - type: textarea
+    id: config
+    attributes:
+      label: Config / checkpoint path (if applicable)
+      description: yaml path, checkpoint filename (.bin / .pth.tr), model variant S/B/L
+    validations:
+      required: false
