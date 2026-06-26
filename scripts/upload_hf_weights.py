@@ -67,7 +67,7 @@ See the [GitHub repo](https://github.com/nankingjing/PoseMamba) for training, ev
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--weights-dir", type=Path, required=True)
-    parser.add_argument("--repo", default="nankingjing/PoseMamba-weights")
+    parser.add_argument("--repo", default="nankingjings/PoseMamba-weights")
     parser.add_argument("--private", action="store_true")
     args = parser.parse_args()
 

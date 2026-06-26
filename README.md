@@ -7,6 +7,7 @@
 <p align="center">
   <a href="https://github.com/nankingjing/PoseMamba/stargazers"><img src="https://img.shields.io/github/stars/nankingjing/PoseMamba?style=social" alt="GitHub stars"></a>
   <a href="https://github.com/nankingjing/PoseMamba/releases/tag/v1.0.0"><img src="https://img.shields.io/github/v/release/nankingjing/PoseMamba?label=release" alt="Release"></a>
+  <a href="https://huggingface.co/nankingjings/PoseMamba-weights"><img src="https://img.shields.io/badge/🤗%20Weights-HuggingFace-yellow" alt="HF Weights"></a>
   <a href="https://pytorch.org/get-started/locally/"><img src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white" alt="PyTorch"></a>
   <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32401"><img src="https://img.shields.io/badge/AAAI-2025-blue" alt="AAAI 2025"></a>
   <a href="https://arxiv.org/abs/2408.03540"><img src="https://img.shields.io/badge/arXiv-2408.03540-b31b1b.svg" alt="arXiv"></a>
@@ -105,15 +106,15 @@ See `train.sh` for S/B/L variants.
 
 ### Option A: Released `.pth.tr` weights (Google Drive)
 
-Download the [checkpoint bundle](https://drive.google.com/file/d/1WFRAeal8W6ntrTPNrf-SNywdgupj0-S8/view?usp=sharing) or per-model weights below.
+Download from **Hugging Face** (recommended) or Google Drive:
 
-> **Hugging Face** (optional): upload local weights with `python scripts/upload_hf_weights.py --weights-dir ./checkpoints_hf`. HF repo: `nankingjing/PoseMamba-weights` (create after upload).
+| Model | Params | Hugging Face | Google Drive |
+|-------|--------|--------------|--------------|
+| PoseMamba-S | 0.9M | [HF](https://huggingface.co/nankingjings/PoseMamba-weights/blob/main/PoseMamba_S.bin) | [link](https://drive.google.com/file/d/1LZtEjeiAIx6LXFmjoyKKzbaCPV3R1-P7/view?usp=sharing) |
+| PoseMamba-B | 3.4M | [HF](https://huggingface.co/nankingjings/PoseMamba-weights/blob/main/PoseMamba_B.bin) | [link](https://drive.google.com/file/d/1aP6WAq5fKNIqyYcI_ZnYbuagR3_zVik2/view?usp=sharing) |
+| PoseMamba-L | 6.7M | [HF](https://huggingface.co/nankingjings/PoseMamba-weights/blob/main/PoseMamba_L.bin) | [link](https://drive.google.com/file/d/16_Tg0Aqzgih243_dflyFv0UB79gU9u8q/view?usp=sharing) |
 
-| Model | Params | MACs | Weights |
-|-------|--------|------|---------|
-| PoseMamba-S | 0.9M | 3.6G | [link](https://drive.google.com/file/d/1LZtEjeiAIx6LXFmjoyKKzbaCPV3R1-P7/view?usp=sharing) |
-| PoseMamba-B | 3.4M | 13.9G | [link](https://drive.google.com/file/d/1aP6WAq5fKNIqyYcI_ZnYbuagR3_zVik2/view?usp=sharing) |
-| PoseMamba-L | 6.7M | 27.9G | [link](https://drive.google.com/file/d/16_Tg0Aqzgih243_dflyFv0UB79gU9u8q/view?usp=sharing) |
+**All models**: [nankingjings/PoseMamba-weights](https://huggingface.co/nankingjings/PoseMamba-weights) · [Google Drive bundle](https://drive.google.com/file/d/1WFRAeal8W6ntrTPNrf-SNywdgupj0-S8/view?usp=sharing)
 
 Place weights under `checkpoint/` and run evaluation following the training checkpoint layout in `eval.sh`.
 
