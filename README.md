@@ -16,6 +16,8 @@
   <b>Official PyTorch implementation</b> · AAAI 2025 · Linear-complexity Mamba for 3D human pose estimation
 </p>
 
+> **Having trouble installing or reproducing results?** See the pinned [**Installation & FAQ**](https://github.com/nankingjing/PoseMamba/discussions/21) discussion before opening an issue.
+
 ---
 
 ## Highlights
@@ -199,4 +201,4 @@ If you find PoseMamba useful, please cite:
 
 ## Contact
 
-Issues & questions: [GitHub Issues](https://github.com/nankingjing/PoseMamba/issues) · Author: [Yunlong Huang](https://scholar.google.com/citations?user=u2QDgXkAAAAJ&hl=zh-CN)
+Issues & questions: [Installation & FAQ](https://github.com/nankingjing/PoseMamba/discussions/21) · [GitHub Issues](https://github.com/nankingjing/PoseMamba/issues) · Author: [Yunlong Huang](https://scholar.google.com/citations?user=u2QDgXkAAAAJ&hl=zh-CN)
